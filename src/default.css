@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(180, 180, 180);
+}
+
+.img-bg{
+    width: 100%;
+    min-height: 100vh;
+    opacity: .6;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    object-fit: cover;
+}
+
+.acoes{
+    z-index: 33;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.acoes form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.input-tarefa{
+    width: 300px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    user-select: none;
+}
+.corpo{
+    z-index: 55;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.tf{
+    z-index: 45;
+    min-width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    list-style: none;
+}
+.tf li{
+    z-index: 555;
+    width: 90%;
+    padding: 5px 20px;
+    margin: 5px 0px;
+    border-radius: 0px 0px 10px 5px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bi{
+    position: relative;
+    cursor: pointer;
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.bi-trash3-fill:hover,.bi-x-circle:hover{
+    cursor: pointer;
+    color: red;
+}
+.bi-check-circle:hover{
+    cursor: pointer;
+    color: lawngreen;
+}
