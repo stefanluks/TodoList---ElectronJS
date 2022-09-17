@@ -12,7 +12,7 @@ const createWindow = () => {
         }
     });
     win.setMenu(null);
-    win.loadFile('./src/index.html')
+    win.loadFile('./src/index.html');
 }
 
 app.on('window-all-closed', () => {
@@ -24,5 +24,5 @@ app.whenReady().then(() => {
     
     app.on('activate', () => {
         if (BrowserWindow.getAllWindows().length === 0) createWindow();
-    })
+    });
 });
